@@ -1,0 +1,8 @@
+<div class="card user-card" *ngFor="let user of users; let i = index">
+    <app-user-card 
+        [user]="user" 
+        [showButtons]="showButtons"
+    ></app-user-card>
+</div>
+
+

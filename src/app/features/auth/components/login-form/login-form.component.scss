@@ -1,0 +1,35 @@
+.form-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+	&__form {
+		margin-top: 3em;
+		padding: 1.5em;
+		border: 1px solid rgba(0, 0, 0, 0.125);
+		border-radius: 8px;
+		background-color: white;
+		width: 50%;
+
+		&__input {
+			padding-bottom: 0.5em;
+			font-family: "Annie Use Your Telescope", cursive;
+
+			&-label {
+				font-family: "Annie Use Your Telescope", cursive;
+				font-size: 18px;
+			}
+		}
+
+		&__button-container {
+			padding: 1em 0;
+
+			&-button {
+				font-family: "Special Elite", cursive;
+				background: #fe5f55;
+				border-color: #fe5f55;
+				width: 100%;
+			}
+		}
+	}
+}

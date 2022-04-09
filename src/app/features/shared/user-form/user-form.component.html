@@ -1,0 +1,30 @@
+<ng-container *ngIf="!reachedCapacity">
+    <form class="form" [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+        <div class="form__input">
+            <label class="form-label form__input-label" for="fullName">Full Name: </label>
+            <input class="form-control" id="name" type="text" formControlName="fullName">
+        </div>
+    
+        <div class="form__input">
+            <label class="form-label form__input-label" for="profession">Profession: </label>
+            <input class="form-control" id="profession" type="text" formControlName="profession">
+        </div>
+    
+        <div class="form__input">
+            <label class="form-label form__input-label" for="nationality">Nationality: </label>
+            <input class="form-control"  id="nationality" type="text" formControlName="nationality">
+        </div>
+    
+        <div class="form__button-container">
+            <button class="btn btn-primary form__button-container-button" type="submit" [disabled]="!userForm.valid">Submit Member</button>
+        </div>
+    </form>
+</ng-container>
+
+<ng-container *ngIf="reachedCapacity">
+    <div class="message">
+        <h1>Uh oh!</h1>
+        <h2>You have reached the capacity of this event</h2>
+        <p>Remove members to open the form</p>
+    </div>
+</ng-container>

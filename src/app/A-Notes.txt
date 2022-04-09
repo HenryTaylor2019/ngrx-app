@@ -1,0 +1,33 @@
+
+
+
+Features
+1. Order cards on leaderboard in order of points (only show if points)
+2. Use event form details to populate template in user form
+3. 
+
+
+To do
+1. Find a way to get values from Form Control
+2. Make user card reusable 
+3. Implement NgRx
+
+
+Structure 
+Features/feature/pages & components
+
+
+ngrx entity
+
+
+
+1. Implement NgRX Entity
+2. User faker to add photo to cards
+3. Change 'home' button to reset state
+4. Removing user from card-list should reopen form
+
+
+Points
+- User can accure points by answring questions
+- Questions appear on card
+- 

@@ -1,0 +1,20 @@
+<div class="register" *ngIf="(event$ | async) as event">
+    <div class="register__header">
+        <h1 class="register__header-title">Little Event App</h1>
+        <h5 *ngIf="event.eventName" class="register__header-sub">Add members to</h5>
+        <p class="register__header-name fw-bold">{{event.eventName}}</p>
+    </div>
+    <div class="register__form" *ngIf="(event$ | async) as event">
+        <app-user-form [event]="event"></app-user-form>
+    </div>
+    
+    <div class="register__cards" *ngIf="(users$ | async) as users">
+        <app-user-cards 
+            [users]="users"
+            (removeUser)="onRemoveUser($event)"
+            (addPoint)="addUserPoint($event)"
+        ></app-user-cards>
+    </div>    
+</div>
+
+<app-nav></app-nav>

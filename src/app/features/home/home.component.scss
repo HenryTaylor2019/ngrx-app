@@ -1,0 +1,25 @@
+.home {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 0;
+
+    &-title {
+      font-family: "Shizuru", cursive;
+      color: #FE5F55;
+    }
+  }
+
+  &__form {
+    width: 40%;
+  }
+}

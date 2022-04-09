@@ -1,0 +1,10 @@
+<div class="card-body user-card">
+    <h5 class="card-title fw-bold user-card-name">{{user.fullName}}</h5>
+    <p class="card-subtitle mb-2 text-mute user-card-text">{{user.profession}}</p>
+    <p class="card-text user-card-text">{{user.nationality}}</p>
+    <p *ngIf="user.points" class="card-text user-card-text fw-bold"> <span>Points:</span> {{user.points}}</p>
+    <div class="user-card__actions" *ngIf="this.showButtons">
+            <button class="btn btn-success btn-sm user-card__actions-button" (click)="onAddPoint()">Award Point</button>
+            <button class="btn btn-danger btn-sm user-card__actions-button" (click)="onRemove()">Remove User</button>
+    </div>
+</div>

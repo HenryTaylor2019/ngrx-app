@@ -1,0 +1,41 @@
+<form
+	class="form-container"
+	[formGroup]="loginForm"
+	(ngSubmit)="onSubmit(loginForm)"
+>
+	<div class="form-container__form">
+		<div class="form-container__form__input">
+			<label class="form-label form__input-label" for="email"
+				>Email:
+			</label>
+			<input
+				class="form-control"
+				id="email"
+				type="text"
+				formControlName="email"
+			/>
+		</div>
+
+		<div class="form-container__form__input">
+			<label class="form-label form__input-label" for="password"
+				>Password:
+			</label>
+			<input
+				class="form-control"
+				id="password"
+				type="text"
+				formControlName="password"
+			/>
+		</div>
+
+		<div class="form-container__form__button-container">
+			<button
+				class="btn btn-primary form-container__form__button-container-button"
+				type="submit"
+				[disabled]="!loginForm.valid"
+			>
+				Submit Event
+			</button>
+		</div>
+	</div>
+</form>

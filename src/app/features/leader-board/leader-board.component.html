@@ -1,0 +1,9 @@
+<app-nav></app-nav>
+<div class="leader-board">
+    <div class="leader-board__header">
+        <h3>Leaderboard</h3>
+    </div>
+    <div class="leader-board__card-list" *ngIf="(users$ | async) as users">
+        <app-leaderboard-cards [users]="users"></app-leaderboard-cards>
+    </div>
+</div>

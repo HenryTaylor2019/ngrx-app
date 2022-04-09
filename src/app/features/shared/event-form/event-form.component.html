@@ -1,0 +1,17 @@
+<form class="form" [formGroup]="eventForm" (ngSubmit)="onSubmit(eventForm)">
+
+    <div class="form__input">
+        <label class="form-label form__input-label" for="eventName">Name of Event: </label>
+        <input class="form-control" id="eventName" type="text" formControlName="eventName">
+    </div>
+
+    <div class="form__input">
+        <label class="form-label form__input-label" for="numOfMembers">Number of Members: </label>
+        <input class="form-control" id="numOfMembers" type="number" formControlName="numOfMembers">
+    </div>
+
+    <div class="form__button-container">
+        <button class="btn btn-primary form__button-container-button" type="submit" [disabled]="!eventForm.valid">Submit Event</button>
+    </div>
+    
+</form>

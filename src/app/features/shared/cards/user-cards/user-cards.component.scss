@@ -1,0 +1,12 @@
+.user-card {
+    margin: 1em 0;
+
+    &__body {
+
+        &__actions {
+            display: flex;
+            align-items: flex-end;
+            gap: 1em;
+        }
+    }
+}

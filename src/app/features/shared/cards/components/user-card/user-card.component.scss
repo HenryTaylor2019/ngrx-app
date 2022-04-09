@@ -1,0 +1,22 @@
+.user-card {
+    margin: 1em 0;
+    background-color: white;
+
+    &-name {
+        font-family: 'Special Elite', cursive;
+    }
+
+    &-text {
+        font-family: 'Special Elite', cursive;
+    }
+
+        &__actions {
+            display: flex;
+            align-items: flex-end;
+            gap: 1em;
+
+            &-button {
+                font-family: 'Special Elite', cursive;
+            }
+        }
+}
